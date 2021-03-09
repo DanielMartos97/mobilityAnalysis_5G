@@ -45,7 +45,7 @@ Please, feel free to open any issue, Pull Request or to just fork this project.
 ## Author ✒️
 
 * **Francisco J. Quero** - [FranciscoQuero](https://github.com/FranciscoQuero)
-* **Daniel Martos** - [DaniMartos
+* **Daniel Martos** - [DanielMartos](http://github.com/DanielMartos97)
 
 ## License 📄
 
