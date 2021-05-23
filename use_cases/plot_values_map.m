@@ -295,11 +295,11 @@ function icons = get_icons(transmitters)
     
     for i = 1:length(transmitters)
         name = transmitters(i).Name;
-        if contains(name, 'coverage')
+        if contains(name, 'cov')
             type = 'coverage.png';
-        elseif contains(name, 'blind')
+        elseif contains(name, 'b')
             type = 'blind.png';
-        elseif contains(name, 'hotspot')
+        elseif contains(name, 'h')
             type = 'hotspot.png';
         else
             type = 'uma.png';

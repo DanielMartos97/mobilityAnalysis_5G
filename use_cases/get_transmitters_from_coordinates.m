@@ -6,7 +6,7 @@ height = tx_model.height;
 antenna_element = get_antenna_element(tx_model.antenna_type, frequency);
 
 number_of_txs = length(latitudes);
-if strcmp(tx_model.name, 'uma')
+if strcmp(tx_model.name, 'UMA')
     offset = load_offset_from_optimization_file(number_of_txs);
     number_of_txs = number_of_txs*3;
     cell_sector_angle = [0 120 240];
@@ -27,7 +27,7 @@ if strcmp(tx_model.name, 'uma')
     channel_frequencies = zeros(1, number_of_txs);
     for i=1:number_of_txs
         channel_frequencies(i) = frequency;
-        cell_names(i) = "Transmitter "+floor((i-1)/3+1)+" cell "+cell_nums(i);
+        cell_names(i) = "Tx "+floor((i-1)/3+1)+" cell "+cell_nums(i);
     end
     transmitters = txsite("Name", cell_names, ...
         "Latitude", cells_latitudes, ...
@@ -45,7 +45,7 @@ else
         else
             channel_frequencies(i) = frequency;
         end
-        cell_names(i) = "UMI "+tx_model.name+" "+i;
+        cell_names(i) = tx_model.name+" "+i;
     end
     transmitters = txsite("Name", cell_names, ...
         "Latitude", latitudes, ...

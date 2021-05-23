@@ -1,19 +1,16 @@
-# Urban 5GRX with mobility analysis 
-An automated 5G deployment tool written in Matlab
+# Open Street Map Buildings Parser
+An Open Street Maps building parser. It downloads the building info from a latlon box and identifies the buildings types.
 
 ## Starting 🚀
 
 
 ### Requirements 📋
 
- - Although this  tool is written in Matlab, it needs another Python application to run. Its name is Open Street Map Building Parser and you can find it here: https://github.com/FranciscoQuero/open_street_maps_buildings_parser .
-
- - Matlab R2020a or higher is required to run this app.
- - Python 3 is required to run the buildings parser.
+ - Python 3.
+ - The Python requests library. See below.
 
 ### Setting it up 🔧
 
- - Unzip both Urban 5GRX and Open Street Map building parser into the same directory
  - Install Pyhton requirements:
 
 ```
@@ -22,27 +19,25 @@ pip install -r requirements.txt
 
 ## Run it! ⚙️
 
-Open Matlab and go to the directory where both apps are located.
-
-In Matlab command line, write:
-
+Open the command line and go to the directory where the app is located. For the first time, run the app followed by the location box coordinates. For instance:
 
 ```
-main
+python main.py 37.1477 -3.6097 37.1647 -3.5875
 ```
 
-You will see the UI. Just modify the parameters you want and click on "START!"
+It will download the map in JSON format and will generate the buildings_info.json with the coordinates and buildings info.
 
+If you already executed it before, you can just run the app without any argument so that it will use the previously downloaded map file:
+
+```
+python main.py
+```
 
 
 ## Built with 🛠️
 
-* [Matlab](https://www.mathworks.com/products/matlab.html) - The main language
 * [Python 3](https://www.python.org/downloads/) - The aux langauge
 * [Open Street Map API](https://wiki.openstreetmap.org/wiki/API_v0.6) - We used this API to retrieve the 3D buildings models
-* [Open Cell ID API](http://wiki.opencellid.org/wiki/Main_Page) - We used this API to retrieve the cells location
-* [Here Maps API](http://https://developer.here.com/documentation) - We used this API to retrieve the directions of receivers
-* 
 
 ## Contribute 🖇️
 Please, feel free to open any issue, Pull Request or to just fork this project.
@@ -50,7 +45,6 @@ Please, feel free to open any issue, Pull Request or to just fork this project.
 ## Author ✒️
 
 * **Francisco J. Quero** - [FranciscoQuero](https://github.com/FranciscoQuero)
-* **Daniel Martos** - [DanielMartos](http://github.com/DanielMartos97)
 
 ## License 📄
 
