@@ -1,0 +1,33 @@
+Name: Tx 1 cell 1
+ - Location: 39.4732 , -6.3371
+ - Power: 25 W
+ - Frequency: 3.5 GHz
+ - Sector angles: 52 192 336
+ - Connected users: 0
+ - Traffic demanded by users: 0 Mbps
+
+Name: Tx 2 cell 1
+ - Location: 39.4732 , -6.3332
+ - Power: 25 W
+ - Frequency: 3.5 GHz
+ - Sector angles: 23 186 268
+ - Connected users: 0
+ - Traffic demanded by users: 0 Mbps
+
+Name: Tx 3 cell 1
+ - Location: 39.4801 , -6.3371
+ - Power: 25 W
+ - Frequency: 3.5 GHz
+ - Sector angles: 43 219 246
+ - Connected users: 1
+ - Traffic demanded by users: 310.0683 Mbps
+
+
+------- SUMMARY ------- 
+ - Total coverage (UMa + UMi): 89.0909 % (area with SINR > 0 dB)
+ - UMa layer coverage: 89.0909 %
+ - Users whose SINR < 0 dB: 0 out of 1
+ - Total Network traffic: 310.0683 Mbps
+ - Mean traffic per user: 310.0683 Mbps
+ - Traffic / area: 159.3336 Mbps/Km^2
+ - Total number of UMa: 9
