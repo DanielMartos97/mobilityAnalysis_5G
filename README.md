@@ -8,13 +8,13 @@ An automated 5G deployment tool written in Matlab
 
  - Although this  tool is written in Matlab, it needs another Python application to run. Its name is Open Street Map Building Parser and you can find it here: https://github.com/FranciscoQuero/open_street_maps_buildings_parser .
 
- - Matlab R2019b or higher is required to run this app.
+ - Matlab R2020a or higher is required to run this app.
  - Python 3 is required to run the buildings parser.
 
 ### Setting it up 🔧
 
  - Unzip both Urban 5GRX and Open Street Map building parser into the same directory
- - Unzip files in the directory data_opencellid
+ - Unzip data_opencellid.zip
  - Install Pyhton requirements:
 
 ```
